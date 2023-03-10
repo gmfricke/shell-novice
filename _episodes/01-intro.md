@@ -18,13 +18,12 @@ cryptic its commands and operation can be."
 ---
 ### Background
 
-Humans and computers commonly interact in many different ways, such as through a keyboard and mouse,
-touch screen interfaces, or using speech recognition systems.
-The most widely used way to interact with personal computers is called a
-**graphical user interface** (GUI).
-With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.
+A shell allows your to interact with your computer and instruct it to perfom a variety of tasks, such as running a program or copying a file. It's the means through which you tell the computer what you want to do. You have very likely used shells with graphical user interfaces (GUIs) before, such as Microsoft Windows, Apple OS X, or your smart phone, to run programs and execute other tasks (though you may not have heard them called shells at the time). Humans and computers interact in many different ways, such as through the keyboard and mouse,
+touch screen interfaces, or using speech recognition systems, all of which are commonly seen in GUI shells.
 
-While the visual aid of a GUI makes it intuitive to learn,
+The purpose of shells that use **command-line interfaces** (CLI) is exactly the same as GUI shells. The difference is that you type the actions you want the computer to perform on the keyboard instead of using your mouse to click icons and menus. Typing commands may seem intimidating and labourious at first, but it means you are not limited to actions predefined by the GUI designers. As you will see by the end of this lesson CLI shells allows you to issue more powerful and flexible instructions to the computer, which for many tasks will ultimately save you time and effort.
+
+For example, while the visual aid of a GUI makes it intuitive to learn,
 this way of delivering instructions to a computer scales very poorly.
 Imagine the following task:
 for a literature search, you have to copy the third line of one thousand text files in one thousand
@@ -32,18 +31,17 @@ different directories and paste it into a single file.
 Using a GUI, you would not only be clicking at your desk for several hours,
 but you could potentially also commit an error in the process of completing this repetitive task.
 This is where we take advantage of the Unix shell.
-The Unix shell is both a **command-line interface** (CLI) and a scripting language,
-allowing such repetitive tasks to be done automatically and fast.
+The Unix shell is both a CLI and a scripting language. As a scripting language the Unix shell 
+allows repetitive tasks to be done automatically and fast.
 With the proper commands, the shell can repeat tasks with or without some modification
 as many times as we want.
 Using the shell, the task in the literature example can be accomplished in seconds.
 
+We can also string commands together, taking the output of one command as the input of another command where it can be modified and passed on to yet another command. This flexability allows complex tasks to be performed that would be impossible using a GUI shell.
 
-### The Shell
+### The Command Line Shell
 
-
-The shell is a program where users can type commands.
-With the shell, it's possible to invoke complicated programs like climate modeling software
+In this lesson we will learn about the Unix shell. With a Unix shell, it's possible to invoke complex programs like climate modeling software
 or simple commands that create an empty directory with only one line of code.
 The most popular Unix shell is Bash (the Bourne Again SHell ---
 so-called because it's derived from a shell written by Stephen Bourne).
